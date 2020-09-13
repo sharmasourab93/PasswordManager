@@ -56,7 +56,7 @@ class LogConfigurator:
         
         if path is None:
             logging.warning("Log configuration file NOT found: " +
-                            ','.join(value, default_path, package_path)
+                            ','.join([str(value), str(default_path), str(package_path)])
                             )
             logging.basicConfig(level=default_level)
         else:
