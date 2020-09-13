@@ -6,7 +6,7 @@ A Password Manager System for those who find it difficult to remember their pass
 #### Technologies Used
 
 - Flask/Python
-- SQLite 
+- MySQL 
 - HTML/CSS/JavaScript
 
 
@@ -23,7 +23,7 @@ A Password Manager System for those who find it difficult to remember their pass
 
 
 ### Phases of Implementation 
-- Write the Flask Application's Skeleton. 
+- Write the Flask Application's Skeleton. (DONE)
 - Implement Login Interface.
 - Implement all the functionalities including connection with db. 
 - Write test cases.
