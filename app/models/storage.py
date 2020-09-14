@@ -3,17 +3,17 @@ from app.models import Auth
 
 
 class Storage(db.Model):
-    __tablename__ = 'Storage'
+    __tablename__ = 'storage'
     
     id_ = db.Column(db.Integer,
                     primary_key=True,
                     autoincrement=True,
                     nullable=False)
     uid = db.Column(db.Integer,
-                    db.ForeignKey(Auth),
+                    db.ForeignKey(Auth.userid),
                     nullable=False
                     )
-    domain = db.Column(db.String(50),
+    domain = db.Column(db.String(255),
                        unique=True,
                        nullable=False)
     user_for_domain = db.Column(db.String(50),
